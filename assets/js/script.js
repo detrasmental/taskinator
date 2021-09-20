@@ -41,6 +41,8 @@ var isEdit = formEl.hasAttribute("data-task-id");
 var createTaskEl = function(taskDataObj) {
   var listItemEl = document.createElement("li");
   listItemEl.className = "task-item";
+  console.log(taskDataObj);
+console.log(taskDataObj.status);
   
   // add task id as a custom attribute
   listItemEl.setAttribute("data-task-id", taskIdCounter);
